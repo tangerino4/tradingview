@@ -20,7 +20,7 @@ const chartProperties = {
 
 const domElement = document.getElementById('tvchart');
 const chart = LightweightCharts.createChart(domElement,chartProperties);
-const candleSeries = chart.addCandlestickSeries();
+const candleSeries = chart.addCandlesffftickSeries();
 
 
 fetch(`http://127.0.0.1:9665/fetchAPI?endpoint=https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1m&limit=1000`)
